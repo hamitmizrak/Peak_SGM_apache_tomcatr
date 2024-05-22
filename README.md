@@ -46,5 +46,16 @@
 ```
 
 
+## \bin\catalina.bat (Ram, Garbarage Collection )
+```sh
+  set JAVA_OPTS=-Xms512m -Xmx1024m -XX:UseG1GC -XX:MaxGCPauseMillis=200
+  
+  -Xms512m (Minumum Ram)
+  -Xmx1024m  (Maksimum Ram)
+  -XX:UseG1GC (Garbarage Collection)
+  -XX:MaxGCPauseMillis=200
+```
+
+
 
 
