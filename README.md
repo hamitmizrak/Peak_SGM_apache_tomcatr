@@ -25,7 +25,8 @@
 
 ## \conf\server.xml (Port Change) 
 ```sh
-	<Connector 
+	<Connector   
+	
           port="9999"  (Sistem Port) 
           protocol="HTTP/1.1" (HTTP Protokolü)
           connectionTimeout="20000" (İstemci Bağlantısını kurarken maksimum bekleme süresi 1000ms=1s)
