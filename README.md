@@ -35,8 +35,6 @@
           minSpareThreads="20" (Boşta bekleyen minumum thread sayısı)
           maxSpareThreads="100" (Boşta bekleyen maksimum thread sayısı)
           acceptCount="100" (Eğer tüm threadler dolu ise kuyrukta bekleyecek maksimum request sayısı)
-          />
-          
           >
           </Connector>
 ```
