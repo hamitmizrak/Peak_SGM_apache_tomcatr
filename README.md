@@ -26,11 +26,19 @@
 ## \conf\server.xml (Port Change) 
 ```sh
 	<Connector 
-          port="9999" 
-          protocol="HTTP/1.1" 
-          connectionTimeout="20000" 
-          redirectPort="8443" 
-          maxParameterCount="1000" />
+          port="9999"  (Sistem Port) 
+          protocol="HTTP/1.1" (HTTP Protokolü)
+          connectionTimeout="20000" (İstemci Bağlantısını kurarken maksimum bekleme süresi 1000ms=1s)
+          redirectPort="8443" (HTTP isteklerini HTTPS yönlendirelecek port)
+          maxParameterCount="1000" 
+          maxThreads="200" (Aynı anda işlenebilecek maksimum istek sayısı)
+          minSpareThreads="20" (Boşta bekleyen minumum thread sayısı)
+          maxSpareThreads="100" (Boşta bekleyen maksimum thread sayısı)
+          acceptCount="100" (Eğer tüm threadler dolu ise kuyrukta bekleyecek maksimum request sayısı)
+          />
+          
+          >
+          </Connector>
 ```
 
 ## \webapps\manager\WEB-INF\\web.xml (Deployment Max )
