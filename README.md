@@ -1,5 +1,6 @@
 # Apache Tomcat
-[Apache Tomcat GitHub](https://github.com/hamitmizrak/Peak_SGM_apache_tomcatr)
+[Apache Tomcat GitHub Backend](https://github.com/hamitmizrak/Peak_SGM_apache_tomcatr)
+[Apache Tomcat GitHub Tomcat Version](https://github.com/hamitmizrak/peak_sgm_apache-tomcat-9.0.89)
 ---
 
 ## Gereksinimler
@@ -40,7 +41,7 @@
     </Connector>
 ```
 
-## \webapps\manager\WEB-INF\\web.xml (Deployment Max )
+## \webapps\manager\WEB-INF\web.xml (Deployment Max )
 ```sh
   <servlet>
 	    <multipart-config>
