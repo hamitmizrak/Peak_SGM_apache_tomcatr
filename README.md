@@ -36,7 +36,7 @@
           maxSpareThreads="100" (Boşta bekleyen maksimum thread sayısı)
           acceptCount="100" (Eğer tüm threadler dolu ise kuyrukta bekleyecek maksimum request sayısı)
           >
-          </Connector>
+    </Connector>
 ```
 
 ## \webapps\manager\WEB-INF\\web.xml (Deployment Max )
