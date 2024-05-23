@@ -492,6 +492,15 @@ then
     sudo docker pull centos
     #sudo docker container run -d --rm -p 8888:8080 tomcat:9.0
     #sudo curl http://localhost:8888
+
+    sudo docker search tomcat
+    sudo docker pull tomcat:9.0.8-jre8-alpine
+    sudo docker image ls -a
+    #docker run -p  8888:8080 tomcat:9.0.8-jre8-alpine
+    #docker run -p  6666:8080 --name my_tomcat tomcat:9.0.8-jre8-alpine
+    sudo docker run -p  5555:8080 -d --name my_tomcat tomcat:9.0.8-jre8-alpine
+    docker ps
+    docker container ls -a
 else
      echo -e "apt-get Update List Güncelleme Yapılmadı!!!\n "   
 fi
@@ -531,12 +540,6 @@ fi
 
 #####################################################################
 #####################################################################
-
-
-
-
-
-
 
 sleep 2
 echo -e "\n######  BİTTİ ######"

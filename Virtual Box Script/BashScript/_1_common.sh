@@ -125,7 +125,12 @@ then
 	sudo ufw allow 2222
 	sudo ufw allow 3333
 	sudo ufw allow 4444
-else 
+	sudo ufw allow 5555
+	sudo ufw allow 6666
+	sudo ufw allow 7777
+	sudo ufw allow 8888
+	sudo ufw allow 9999
+else
     echo -e "Genel Güncelleme Yapılmadı!!!\n "    
 fi 
 
