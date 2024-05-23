@@ -27,7 +27,6 @@
 ## \conf\server.xml (Port Change) 
 ```sh
 	<Connector   
-	
           port="9999"  (Sistem Port) 
           protocol="HTTP/1.1" (HTTP Protokolü)
           connectionTimeout="20000" (İstemci Bağlantısını kurarken maksimum bekleme süresi 1000ms=1s)
@@ -37,6 +36,29 @@
           minSpareThreads="20" (Boşta bekleyen minumum thread sayısı)
           maxSpareThreads="100" (Boşta bekleyen maksimum thread sayısı)
           acceptCount="100" (Eğer tüm threadler dolu ise kuyrukta bekleyecek maksimum request sayısı)
+          >
+    </Connector>
+```
+
+
+## \conf\server.xml (Keep-Alive)
+> Keep-Alive : istemci aynı TCP bağlantılarında tekrar tekrar kullanılmasını olanak sağlar
+> Keep-Alive: Serverdaki yükü azaltır.
+```sh
+	<Connector   
+          port="9999"  (Sistem Port) 
+          protocol="HTTP/1.1" (HTTP Protokolü)
+          redirectPort="8443" (HTTP isteklerini HTTPS yönlendirelecek port)
+          maxParameterCount="1000" 
+          maxThreads="200" (Aynı anda işlenebilecek maksimum istek sayısı)
+          minSpareThreads="20" (Boşta bekleyen minumum thread sayısı)
+          maxSpareThreads="100" (Boşta bekleyen maksimum thread sayısı)
+          acceptCount="100" (Eğer tüm threadler dolu ise kuyrukta bekleyecek maksimum request sayısı)
+          
+          connectionTimeout="20000" (İstemci Bağlantısını kurarken maksimum bekleme süresi 1000ms=1s)
+          keepAliveTimeout="50000" (Keep-alive bağlantısında zaman aşımı süresidir. Mili saniye cinsindendir: ) 50 saniye: bu süre sunucun bağlantıyı kapatmadan önce bekleyeceği süredir
+          maxKeepAliveRequest="100" (keep-alive bağlantısında max istek sayısını gösterir eğer 100 sayısını aşıldığunda bağlantı kapatılır ve yeni istekler için instance oluşturulması gerekir.)
+          
           >
     </Connector>
 ```
