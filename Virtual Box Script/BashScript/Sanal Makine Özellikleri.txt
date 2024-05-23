@@ -1,0 +1,7 @@
+Sanal Makine (Aşağıdaki özellikler minumum olmasını beklediğimiz özellikler)
+----------------------------------------------------------------------------
+
+Ubuntu 22.0.4
+Ana bellek: 4096 MB
+İşlemci   : 4 Core
+Sabit Disk: 40 GB  
