@@ -1,0 +1,57 @@
+# docker-compose --version => Docker Compose version v2.27.0-desktop.2
+# Eğer dosya adı olarak docker-compose.yml vermişseniz
+# docker-compose up
+# docker-compose up -d
+# 
+# Eğer dosya adı olarak farklı bir isim vermişseniz
+# docker-compose -f apache_jdk_docker_docker-compose.yml up
+# docker-compose -f apache_jdk_docker_docker-compose.yml up -d
+# 
+# docker-compose down
+# docker-compose restart
+
+# 
+# 
+# 
+# 
+
+services:
+  apache_tomcat_web:
+    container_name: my_tomcat2
+    image: my_tomcat2
+    restart: on-failure
+    build: ./
+    ports:
+      - "1111:8080"
+
+
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+
+
+
+
