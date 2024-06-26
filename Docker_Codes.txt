@@ -10,6 +10,12 @@ docker image ls
 docker image ls -a
 
 -------------------------------------
+docker pull tomcat:9.0.8-jre8-alpine
+docker run -p  8888:8080 -d --name my_tomcat_9 tomcat:9.0.8-jre8-alpine
+winpty docker container exec -it 27c46072a316 bash
+
+
+-------------------------------------
 docker search tomcat
 docker pull tomcat:9.0.8-jre8-alpine
 docker image ls -a
